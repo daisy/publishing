@@ -64,13 +64,13 @@
 			<section id="meeting">
 				<h3>How to Meet</h3>
 				
-				<p>This success criterion is typically not an issue for reflowable EPUBs as the text will automatically
-					adjust when text is resized.</p>
+				<p>Authors of reflowable EPUB publications need to ensure that they do not define font and container
+					elements in absolute units of measure like pixels. Using flexible measures, like ems and
+					percentages, ensures that when users change font sizes the text remains readable (e.g., it does
+					not overlap nearby elements or get cut off by its bounding element).</p>
 				
-				<p>Meeting the criteria for fixed-layout EPUBs is more difficult. The rigidity of fixing text to
-					specific locations is more likely to result in font increases cropping the text &#8212; either
-					because the text no longer fits in its containing element or because it is forced outside of the
-					page boundary.</p>
+				<p>This success criterion is typically not an issue for fixed layout EPUBs as reading systems allow
+					users to zoom the content.</p>
 			</section>
 			<section id="kb">
 				<h3>Additional Information</h3>
@@ -79,7 +79,7 @@
 					criterion for publishing content:</p>
 				
 				<ul>
-					<li><a href="%xxx.html%">%Page title%</a></li>
+					<li><a href="../../css/text-resize.html">Text Resizing</a></li>
 				</ul>
 			</section>
 		</main>
