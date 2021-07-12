@@ -33,18 +33,33 @@
 						<th>Applicability:</th>
 						<td class="docs">
 							<ul>
-								<li>%item%</li>
+								<li>Audio</li>
 							</ul>
 						</td>
 					</tr>
 					<tr>
 						<th>Requirement:</th>
 						<td class="desc">
-							<p>%SC Text%</p>
-							<details>
-								<summary>View exceptions</summary>
-								...
-							</details>
+							<p>For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:</p>
+							
+							<dl>
+								<dt>No Background</dt>
+								<dd>
+									<p>The audio does not contain background sounds.</p>
+								</dd>
+								
+								<dt>Turn Off</dt>
+								<dd>
+									<p>The background sounds can be turned off.</p>
+								</dd>
+								
+								<dt>20 dB</dt>
+								<dd>
+									<p>The background sounds are at least 20 decibels lower than the foreground speech
+										content, with the exception of occasional sounds that last for only one or two
+										seconds.</p>
+								</dd>
+							</dl>
 						</td>
 					</tr>
 					<tr>
@@ -61,12 +76,18 @@
 			<section id="purpose">
 				<h3>Purpose</h3>
 				
-				<p>...</p>
+				<p>The purpose of this success criterion is to ensure that users who are hard of heading can
+					distinguish speech from any background sounds.</p>
 			</section>
 			<section id="meeting">
 				<h3>How to Meet</h3>
 				
-				<p>...</p>
+				<p>Authors need to ensure that any audio of speech (not including musical expressions) has no
+					background noise, the background noise can be disabled, or the background noise is at least
+					20 decibels lower than the speech.</p>
+				
+				<p>Note that this success criterion only applies to audio clips. It does not apply to audio in a video,
+					interactive game, etc.</p>
 			</section>
 			<section id="kb">
 				<h3>Additional Information</h3>
@@ -75,7 +96,7 @@
 					criterion for publishing content:</p>
 				
 				<ul>
-					<li><a href="%xxx.html%">%Page title%</a></li>
+					<li><a href="../audio.html">Audio</a></li>
 				</ul>
 			</section>
 		</main>
